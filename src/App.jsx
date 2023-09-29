@@ -20,12 +20,12 @@ function App() {
   return (
     <>
       <main className={styles.main}>
-        {/* <div className={styles.gradient}></div> */}
+        <div className={styles.gradient}></div>
         <Container>
-          {/* <CardsContainer>
+          <CardsContainer>
             <CardFront firstTimeLoad={firstTimeLoad} user={user} />
             <CardBack firstTimeLoad={firstTimeLoad} user={user} />
-          </CardsContainer> */}
+          </CardsContainer>
           <FormContainer>
             <Form firstTimeLoad={firstTimeLoad} setUser={setUser} />
           </FormContainer>

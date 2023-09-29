@@ -1,0 +1,26 @@
+.lines {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  gap: 0.5rem;
+  margin: 2.2rem auto;
+}
+
+.layerOne,
+.layerTwo,
+.layerThree {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.layerTwo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.line {
+  background-color: #aeb5bd;
+  height: 4px;
+  border-radius: 4px;
+}

@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import styles from "./CardBack.module.css";
+import LinesGroup from "./LinesGroup";
 
-export default function CardBack() {
+export default function CardBack({ firstTimeLoad, user }) {
+  const firstLoad = firstTimeLoad ? styles.animateFirstLoad : "";
+
   return (
-    <div>CardBack</div>
-  )
+    <main className={`${styles.cardBack} ${firstLoad}`}>
+      <div className={styles.magstripe}></div>
+      <div className={styles.cvv}>{user ? user.cvv : "000"}</div>
+      <LinesGroup />
+    </main>
+  );
 }
