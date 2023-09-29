@@ -1,0 +1,33 @@
+.main {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gradient {
+  background-color: #4e1a45;
+  height: 100vh;
+  width: 500px;
+  position: fixed;
+  left: 0;
+  background: rgb(4, 14, 31);
+  background: linear-gradient(
+    160deg,
+    rgba(4, 14, 31, 1) 10%,
+    rgba(74, 12, 22, 1) 20%,
+    rgba(59, 14, 70, 1) 30%,
+    rgba(59, 14, 70, 1) 34%,
+    rgba(68, 20, 48, 1) 38%,
+    rgba(51, 37, 78, 1) 43%,
+    rgba(43, 45, 89, 1) 47%,
+    rgba(41, 38, 80, 1) 54%,
+    rgba(39, 31, 79, 1) 57%,
+    rgba(36, 13, 55, 1) 65%,
+    rgba(34, 5, 45, 1) 69%,
+    rgba(34, 5, 45, 1) 87%,
+    rgba(34, 5, 45, 1) 98%
+  );
+}

@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  place-items: center;
+  z-index: 10;
+  gap: 10rem;
+}
