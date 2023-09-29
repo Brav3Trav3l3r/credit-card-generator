@@ -1,0 +1,67 @@
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.7rem 5rem 0.7rem 1.5rem;
+  border-left: 4px solid rgba(144, 221, 29, 0.676);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  border-radius: 6px;
+  transform: translateX(calc(100% + 30px));
+}
+
+.slideIn {
+  animation: slideIn 500ms ease forwards;
+}
+
+.slideOut {
+  animation: slideOut 500ms ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(calc(100% + 30px));
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(calc(100% + 30px));
+  }
+}
+
+.checkIcon {
+  padding: 8px;
+  background-color: rgba(172, 255, 47, 0.32);
+  display: flex;
+  border-radius: 50%;
+  color: rgb(5, 110, 5);
+  font-size: 1.3rem;
+}
+
+.message h3 {
+  color: green;
+  font-weight: 500;
+}
+
+.message p {
+  color: rgb(29, 29, 29);
+  font-size: 0.9rem;
+}

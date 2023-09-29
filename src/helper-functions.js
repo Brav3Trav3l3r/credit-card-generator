@@ -12,7 +12,7 @@ export function convertCardNumber(val) {
 }
 
 export function monthValidator(val) {
-  let res = val > 0 && val <= 12;
+  let res = val > 0 && val <= 12 && /^\d+$/.test(val);
   return res;
 }
 
